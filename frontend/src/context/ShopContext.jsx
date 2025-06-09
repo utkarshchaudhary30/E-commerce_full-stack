@@ -8,7 +8,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = '$';
   const delivery_fee = 10;
-  const backendUrl = 'https://e-commerce-backend-chi-pied.vercel.app'; // Temporary hardcoded value for debugging
+  const backendUrl = import.meta.env.VITE_BACKEND_URL; // Temporary hardcoded value for debugging
 
   const [search, setSearch] = useState('');
   const [showSearch, setShowSearch] = useState(false);
