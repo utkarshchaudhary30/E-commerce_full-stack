@@ -8,11 +8,7 @@ export const ShopContext = createContext();
 const ShopContextProvider = (props) => {
   const currency = '$';
   const delivery_fee = 10;
-<<<<<<< HEAD
   const backendUrl = import.meta.env.VITE_BACKEND_URL; // Temporary hardcoded value for debugging
-=======
-  const backendUrl = 'http://localhost:4000'; // Temporary hardcoded value for debugging
->>>>>>> afd9ed1 (Initial commit with full stack structure)
 
   const [search, setSearch] = useState('');
   const [showSearch, setShowSearch] = useState(false);
